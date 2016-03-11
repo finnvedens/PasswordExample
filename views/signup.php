@@ -1,23 +1,32 @@
-<form class="form-horizontal" action='' method="POST">
+<form class="form-horizontal" action='register.php' method="POST">
     <fieldset>
         <div id="legend">
             <legend class="">Register</legend>
         </div>
         <div class="control-group">
             <!-- First name -->
-            <label class="control-label"  for="username">First Name</label>
+            <label class="control-label"  for="username">Username</label>
             <div class="controls">
-                <input type="text" id="first-name" name="first-name" placeholder="" class="input-xlarge">
+                <input type="text" id="first-name" name="username" placeholder="" class="input-xlarge">
                 <p class="help-block">Username can contain any letters or numbers, without spaces</p>
             </div>
         </div>
 
         <div class="control-group">
             <!-- Surname-->
-            <label class="control-label"  for="surname">First Name</label>
+            <label class="control-label"  for="firstName">First Name</label>
+            <div class="controls">
+                <input type="text" id="surname" name="firstName" placeholder="" class="input-xlarge">
+                <p class="help-block">First name can contain any letters or numbers, without spaces</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Surname-->
+            <label class="control-label"  for="surname">Surname</label>
             <div class="controls">
                 <input type="text" id="surname" name="surname" placeholder="" class="input-xlarge">
-                <p class="help-block">Surname can contain any letters or numbers, without spaces</p>
+                <p class="help-block">Surname name can contain any letters or numbers, without spaces</p>
             </div>
         </div>
 

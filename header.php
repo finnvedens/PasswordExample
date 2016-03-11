@@ -30,7 +30,16 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php?page=login">Log-in</a></li>
+             <?php if (isset($_SESSION['username']))
+             {
+                 $temp=$_SESSION['username'];
+                 echo "<li><a href = 'logout.php' >Log out $temp</a ></li >";
+             }
+                else
+            {
+                echo "<li><a href = 'index.php?page=login' > Log - in</a ></li >";
+            }
+ ?>
 
             </ul>
         </div><!-- /.navbar-collapse -->

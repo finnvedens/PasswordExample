@@ -1,4 +1,8 @@
 <?php
+//We are going to use session variables to check our log in state...
+session_start();
+
+
 /***Website variables****/
 $title="Top Secret Stuff";
 
